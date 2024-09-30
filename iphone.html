@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iphone</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        body{
+            background-color: #bbb;
+        }
+
+        div.form{
+            background-color: black;
+            margin: auto;
+            width: 280px;
+            padding: 10px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+            top: 60px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+           
+        }
+        div.form form input[type="text"] {
+            background-color: black;
+            width: 95%;
+            padding: 10% 3%;
+            border: none;
+            outline: none;
+            font-size: 4em;
+            color: white;
+            text-align: right;
+
+        }
+        div.form form input[type="button"]{
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+
+
+        }
+
+        div.form form input[type="button"].ac{
+
+            width: 65px;
+            height: 65px;
+            border-radius: 50%;
+            background-color: #bebebe;
+           
+
+        }
+
+        div.form form input[type="button"].z{
+
+        width: 130px;
+        background-color: white;
+        border-top-right-radius: 25px;
+        border-top-left-radius: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+
+}
+        div.form input[type="button"].oro{
+            background-color: orange;
+            color: white;
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="form">
+    <form name="ml">
+
+    <input type="text" name = "result">
+
+    <input type="button" class="ac" value="AC" onclick="ml.result.value = ' ' ">
+    <input type="button" class="ac" value="+/-"onclick="ml.result.value += '  ' " >
+    <input type="button" class="ac" value="%" onclick="ml.result.value += ' % ' " >
+
+    <input type="button" class="oro" value="+" onclick="ml.result.value +='+'">            
+            
+    <input type="button" class="or" value="7" onclick="ml.result.value += '7'">            
+    <input type="button" class="or" value="8" onclick="ml.result.value += '8'">
+    <input type="button" class="or" value="9" onclick="ml.result.value += '9'">    
+    <input type="button" class="oro" value="*"onclick="ml.result.value += '*'"/>    
+    <input type="button" class="or" value="4" onclick="ml.result.value += '4'">
+    <input type="button" class="or" value="5" onclick="ml.result.value += '5'">
+    <input type="button" class="or" value="6" onclick="ml.result.value += '6'">
+    <input type="button" class="oro" value="/"onclick="ml.result.value += '/'" >
+    <input type="button" class="or" value="3" onclick="ml.result.value += '3'">
+    <input type="button" class="or" value="2" onclick="ml.result.value += '2'">
+    <input type="button" class="or" value="1" onclick="ml.result.value += '1'">
+    <input type="button" class="oro" value="-" onclick="ml.result.value += '-'" >
+    <input type="button" class="z" value="0"  onclick="ml.result.value += '0' " >
+    <input type="button" class="or" value="." onclick="ml.result.value += '.' " >     
+    <input type="button" class="oro" value="=" onclick="ml.result.value = eval(ml.result.value ) " >            
+       
+    </form>
+    </div>
+
+   
+    
+</body>
+</html>
